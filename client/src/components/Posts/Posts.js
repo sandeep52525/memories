@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import Post from "./Post/Post";
 import useStyles from "./styles";
 
-const Posts = ({ setCurrentId }) => {
+function Posts({ setCurrentId }) {
   const posts = useSelector((state) => state.posts);
   const classes = useStyles();
 
@@ -25,6 +25,6 @@ const Posts = ({ setCurrentId }) => {
       ))}
     </Grid>
   );
-};
+}
 
 export default Posts;
